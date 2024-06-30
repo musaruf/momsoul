@@ -1,13 +1,12 @@
-import { styled } from "styled-components";
 import categories from "../../data/categoriesData";
 import CategoryItem from "../CategoryItem/CategoryItem";
-
-const Container = styled.dev``;
+import { Container } from "./style";
 
 const Categories = () => {
   return (
     <Container>
-      {categories && categories.map((item) => <CategoryItem item={item} />)}
+      {categories &&
+        categories.map((item) => <CategoryItem item={item} key={item.id} />)}
     </Container>
   );
 };

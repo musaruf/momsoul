@@ -48,12 +48,20 @@ export const Slide = styled.div`
   background-color: #${(props) => props.bg};
 `;
 export const ImgContainer = styled.div`
-  height: 100%;
+  height: 80%;
   flex: 1;
+  border-top-right-radius: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 `;
 export const Image = styled.img`
-  height: 80%;
+  height: 100%;
   width: 100%;
+  border-top-right-radius: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+
   object-fit: cover;
 `;
 export const InfoContainer = styled.div`
