@@ -14,7 +14,7 @@ export const Title = styled.h1`
   margin-bottom: 20px;
 `;
 
-export const Desc = styled.div`
+export const Desc = styled.p`
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -38,5 +38,5 @@ export const Button = styled.button`
   flex: 1;
   border: none;
   color: white;
-  background-color: teal;
+  background-color: #00cdca;
 `;

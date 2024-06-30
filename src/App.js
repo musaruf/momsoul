@@ -1,11 +1,13 @@
-import Category from "./pages/Category";
-import Home from "./pages/Home";
+import Product from "./pages/Product/Product.jsx";
+import Category from "./pages/Category/Category";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
       {/* <Home /> */}
-      <Category />
+      {/* <Category /> */}
+      <Product />
     </div>
   );
 }

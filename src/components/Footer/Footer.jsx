@@ -36,16 +36,16 @@ const Footer = () => {
           our Mom's Soul Soaps.
         </Desc>
         <SocialContainer>
-          <SocialIcon color="3B5999">
+          <SocialIcon color="white" bgcolor="3B5999">
             <FacebookIcon />
           </SocialIcon>
-          <SocialIcon color="E4405F">
+          <SocialIcon color="white" bgcolor="E4405F">
             <InstagramIcon />
           </SocialIcon>
-          <SocialIcon color="ffffff">
+          <SocialIcon color="black" bgcolor="ffffff">
             <TwitterIcon />
           </SocialIcon>
-          <SocialIcon color="55ACEE">
+          <SocialIcon color="white" bgcolor="55ACEE">
             <TelegramIcon />
           </SocialIcon>
         </SocialContainer>
