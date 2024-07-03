@@ -1,0 +1,44 @@
+import styled from "styled-components";
+import { mobile } from "../../responsive";
+
+export const Wrapper = styled.div`
+  width: 25%;
+  padding: 20px;
+  background-color: white;
+  ${mobile({ width: "75%" })}
+`;
+
+export const Title = styled.h1`
+  font-size: 24px;
+  font-weight: 300;
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Input = styled.input`
+  flex: 1;
+  min-width: 40%;
+  margin: 10px 0px;
+  padding: 10px;
+`;
+
+export const Button = styled.button`
+  width: 40%;
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+`;
+
+export const Links = styled.a`
+  margin: 5px 0px;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+`;
