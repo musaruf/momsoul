@@ -2,6 +2,7 @@ import { Container, Image, Circle, Info, Icon } from "./style";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { Link } from "react-router-dom";
 
 const Product = ({ item }) => {
   return (
@@ -10,7 +11,9 @@ const Product = ({ item }) => {
       <Image src={item.img} />
       <Info>
         <Icon>
-          <ShoppingCartOutlinedIcon />
+          <Link to="/product">
+            <ShoppingCartOutlinedIcon />
+          </Link>
         </Icon>
         <Icon>
           <SearchOutlinedIcon />

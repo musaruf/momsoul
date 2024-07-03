@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 export const Container = styled.div`
   display: flex;
   color: white;
   background-color: black;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 export const Left = styled.div`
@@ -11,6 +13,7 @@ export const Left = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  ${mobile({ backgroundColor: "#484849" })}
 `;
 
 export const Logo = styled.h1``;
@@ -38,6 +41,7 @@ export const SocialIcon = styled.div`
 export const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: "none" })}
 `;
 
 export const Title = styled.h3`
@@ -60,6 +64,7 @@ export const ListItem = styled.li`
 export const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ backgroundColor: "black" })}
 `;
 
 export const ContactItem = styled.div`

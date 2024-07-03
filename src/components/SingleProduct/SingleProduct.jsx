@@ -20,6 +20,7 @@ import {
 import Sueys from "../../Images/Sueys.jpg";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
+import { Link } from "react-router-dom";
 
 const SingleProduct = () => {
   return (
@@ -41,7 +42,7 @@ const SingleProduct = () => {
             <Filter>
               <FilterTitle>Varities:</FilterTitle>
               <FilterSize>
-                <FilterSizeOption>Cildren</FilterSizeOption>
+                <FilterSizeOption>Children</FilterSizeOption>
                 <FilterSizeOption>Men</FilterSizeOption>
                 <FilterSizeOption>Women</FilterSizeOption>
               </FilterSize>
@@ -61,7 +62,9 @@ const SingleProduct = () => {
               <Amount>1</Amount>
               <AddIcon />
             </AmountContainer>
-            <Button>Add to cart</Button>
+            <Link to="/cart">
+              <Button>Add to cart</Button>
+            </Link>
           </AddContainer>
         </InfoContainer>
       </Wrapper>

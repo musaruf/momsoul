@@ -2,17 +2,16 @@ import Announcement from "../../components/Announcement/Announcement";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Cart from "../../components/Cart/Cart";
-import Newsletter from "../../components/Newsletter/Newsletter";
 
 import { Container } from "./style";
 
 const CartPage = () => {
   return (
     <Container>
-      {/* <Navbar /> */}
+      <Navbar />
       <Announcement />
       <Cart />
-      {/* <Footer /> */}
+      <Footer />
     </Container>
   );
 };

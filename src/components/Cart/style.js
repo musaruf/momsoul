@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 export const Wrapper = styled.div`
   padding: 20px;
+  ${mobile({ padding: "10px" })}
 `;
 
 export const Title = styled.h1`
@@ -26,7 +28,9 @@ export const TopButton = styled.button`
   color: ${(props) => props.type === "filled" && "white"};
 `;
 
-export const TopTexts = styled.div``;
+export const TopTexts = styled.div`
+  ${mobile({ display: "none" })}
+`;
 
 export const TopText = styled.span`
   text-decoration: underline;
@@ -37,20 +41,18 @@ export const TopText = styled.span`
 export const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 export const Info = styled.div`
   flex: 3;
 `;
 
-export const Summary = styled.div`
-  flex: 1;
-`;
-
 export const Product = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 20px 0px;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 export const ProductDetail = styled.div`
@@ -94,15 +96,49 @@ export const ProductAmountContainer = styled.div`
 export const ProductAmount = styled.div`
   font-size: 24px;
   margin: 5px;
+  ${mobile({ margin: "5px 15px" })}
 `;
 
 export const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
+  ${mobile({ marginBottom: "20px" })}
 `;
 
 export const Hr = styled.hr`
   background-color: #eee;
   border: none;
   height: 1px;
+`;
+
+export const Summary = styled.div`
+  flex: 1;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 45vh;
+`;
+
+export const SummaryTitle = styled.h1`
+  font-weight: 200;
+`;
+
+export const SummaryItem = styled.div`
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: ${(props) => props.type === "total" && "500"};
+  font-size: ${(props) => props.type === "total" && "24px"};
+`;
+
+export const SummaryItemText = styled.span``;
+
+export const SummaryItemPrice = styled.span``;
+
+export const SummaryButton = styled.button`
+  padding: 10px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-weight: 600;
 `;
